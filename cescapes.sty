@@ -1,0 +1,28 @@
+\NeedsTeXFormat{LaTeX2e}
+\ProvidesPackage{cescapes}[2019/12/20 C-Escapes Package]
+
+\providecommand{\f}{\textbackslash f}
+\providecommand{\n}{\textbackslash n}
+\providecommand{\?}{\textbackslash ?}
+\providecommand{\0}{\textbackslash 0}
+
+% Provided but not available (not override)
+\providecommand{\a}{\textbackslash a}
+\providecommand{\b}{\textbackslash b}
+\providecommand{\r}{\textbackslash r}
+\providecommand{\t}{\textbackslash t}
+\providecommand{\v}{\textbackslash v}
+\providecommand{\'}{\textbackslash '}
+\providecommand{\"}{\textbackslash "}
+
+\DeclareOption{override}{
+  \renewcommand{\a}{\textbackslash a}
+  \renewcommand{\b}{\textbackslash b}
+  \renewcommand{\r}{\textbackslash r}
+  \renewcommand{\t}{\textbackslash t}
+  \renewcommand{\v}{\textbackslash v}
+  \renewcommand{\'}{\textbackslash '}
+  \renewcommand{\"}{\textbackslash "}
+}
+
+\ProcessOptions\relax
