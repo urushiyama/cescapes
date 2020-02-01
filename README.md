@@ -25,6 +25,16 @@ provides C-like escape sequences as LaTeX commands except overriding ones of def
 ```
 overrides default LaTeX commands.
 
+```LaTeX
+\usepackage[regex]{cescapes}
+```
+provides not only C-like escape sequences but also Perl-like special sequences for regular expression (regex).
+
+As same as C-like escape sequences, special sequences for regex can override default LaTeX commands by:
+```LaTeX
+\usepackage[regexoverride]{cescapes}
+```
+
 ## Future work
 
 - Overriding only in particular environments

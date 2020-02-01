@@ -1,5 +1,5 @@
 \NeedsTeXFormat{LaTeX2e}
-\ProvidesPackage{cescapes}[2019/12/20 C-Escapes Package]
+\ProvidesPackage{cescapes}[2020/02/02 C-Escapes Package v1.1.0]
 
 \providecommand{\f}{\textbackslash f}
 \providecommand{\n}{\textbackslash n}
@@ -23,6 +23,36 @@
   \renewcommand{\v}{\textbackslash v}
   \renewcommand{\'}{\textbackslash '}
   \renewcommand{\"}{\textbackslash "}
+}
+
+\DeclareOption{regex}{
+  \providecommand{\d}{\textbackslash d}
+  \providecommand{\D}{\textbackslash D}
+  \providecommand{\s}{\textbackslash s}
+  \providecommand{\S}{\textbackslash S}
+  \providecommand{\w}{\textbackslash w}
+  \providecommand{\W}{\textbackslash W}
+  \providecommand{\A}{\textbackslash A}
+  \providecommand{\Z}{\textbackslash Z}
+  \providecommand{\b}{\textbackslash b}
+  \providecommand{\B}{\textbackslash B}
+  \providecommand{\G}{\textbackslash G}
+  \providecommand{\l}{\textbackslash l}
+  \providecommand{\L}{\textbackslash L}
+  \providecommand{\u}{\textbackslash u}
+  \providecommand{\U}{\textbackslash U}
+}
+
+\DeclareOption{regexoverride}{
+  \renewcommand{\d}{\textbackslash d}
+  \renewcommand{\b}{\textbackslash b}
+  \renewcommand{\u}{\textbackslash u}
+  \renewcommand{\U}{\textbackslash U}
+  \renewcommand{\G}{\textbackslash G}
+  \renewcommand{\D}{\textbackslash D}
+  \renewcommand{\S}{\textbackslash S}
+  \renewcommand{\l}{\textbackslash l}
+  \renewcommand{\L}{\textbackslash L}
 }
 
 \ProcessOptions\relax
